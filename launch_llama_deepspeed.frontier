@@ -111,6 +111,7 @@ srun -u -n$ranks_total -c2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=clos
    --learning_rate 2e-5 \
    --block_size 512 \
    --per_device_train_batch_size 1 \
+   --deepspeed configs/ds_config_zero3.json
    --fp16 \
    --run_name finetune \
    --validation_split_percentage 0 \

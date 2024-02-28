@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH -A STF218
-#SBATCH -J gpt_frontier
-#SBATCH -o logs/gpt_oscar_fsdp_2N-%j.o
+#SBATCH -J mixtral_frontier
+#SBATCH -o logs/mixtral_oscar_fsdp_2N-%j.o
 #SBATCH -e logs/gpt_oscar_fsdp_2N-%j.e
 #SBATCH -t 00:20:00
 #SBATCH -p batch

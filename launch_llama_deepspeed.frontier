@@ -2,8 +2,8 @@
 
 #SBATCH -A STF218
 #SBATCH -J mixtral_frontier
-#SBATCH -o logs/mixtral_oscar_fsdp_2N-%j.o
-#SBATCH -e logs/gpt_oscar_fsdp_2N-%j.e
+#SBATCH -o logs/mixtral_frontier_deepspeed_output_2N-%j.o
+#SBATCH -e logs/mixtral_frontier_deepspeed_error_2N-%j.e
 #SBATCH -t 00:20:00
 #SBATCH -p batch
 #SBATCH -N 2
